@@ -316,7 +316,7 @@ namespace AutoScout24
                     {
                         var el = ChromeDriver.FindElement(By.Name("priceInput"));
                         String suffix = null;
-                        if (car.PriceInEuro.Length < 3)
+                        if (car.PriceInEuro.Length < 4)
                         {
                             car.PriceInEuro += Random.Next(0, 999).ToString("D3");
                             suffix = SUFFIX_AUTO;
